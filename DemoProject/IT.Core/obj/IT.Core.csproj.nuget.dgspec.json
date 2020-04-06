@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {}
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
         "projectName": "IT.Core",
-        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
         "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DemoProject\\IT.Core\\obj\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
