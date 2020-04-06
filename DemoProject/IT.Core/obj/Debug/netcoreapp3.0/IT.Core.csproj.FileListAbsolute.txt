@@ -1,0 +1,8 @@
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\bin\Debug\netcoreapp3.0\IT.Core.deps.json
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\bin\Debug\netcoreapp3.0\IT.Core.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\obj\Debug\netcoreapp3.0\IT.Core.csprojAssemblyReference.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\obj\Debug\netcoreapp3.0\IT.Core.AssemblyInfoInputs.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\obj\Debug\netcoreapp3.0\IT.Core.AssemblyInfo.cs
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\bin\Debug\netcoreapp3.0\IT.Core.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\obj\Debug\netcoreapp3.0\IT.Core.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DemoProject\IT.Core\obj\Debug\netcoreapp3.0\IT.Core.pdb
