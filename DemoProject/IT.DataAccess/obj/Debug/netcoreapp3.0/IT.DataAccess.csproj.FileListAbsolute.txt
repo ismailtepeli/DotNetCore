@@ -1,0 +1,10 @@
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.csprojAssemblyReference.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.AssemblyInfo.cs
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.DataAccess.deps.json
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.DataAccess.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Core.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Entity.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Entity.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Core.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.csproj.CopyComplete

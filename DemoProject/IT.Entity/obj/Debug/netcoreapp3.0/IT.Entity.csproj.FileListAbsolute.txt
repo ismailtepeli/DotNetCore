@@ -1,0 +1,11 @@
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\bin\Debug\netcoreapp3.0\IT.Entity.deps.json
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\bin\Debug\netcoreapp3.0\IT.Entity.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\bin\Debug\netcoreapp3.0\IT.Entity.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\bin\Debug\netcoreapp3.0\IT.Core.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\bin\Debug\netcoreapp3.0\IT.Core.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.csprojAssemblyReference.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.AssemblyInfoInputs.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.AssemblyInfo.cs
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.csproj.CopyComplete
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Entity\obj\Debug\netcoreapp3.0\IT.Entity.pdb
