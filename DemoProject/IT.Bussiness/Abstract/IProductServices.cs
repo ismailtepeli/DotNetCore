@@ -13,8 +13,8 @@ namespace IT.Bussiness.Abstract
         Task<Product> AddAsync(Product product);
 
         Product Update(Product product);
-
-        Product UpdateAync(Product product);
+        // Task<Category> UpdateAsync(Category category);
+        Task<Product> UpdateAync(Product product);
 
         void Delete(Product product);
 

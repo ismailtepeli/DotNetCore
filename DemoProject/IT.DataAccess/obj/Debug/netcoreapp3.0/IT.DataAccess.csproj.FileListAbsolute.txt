@@ -8,3 +8,6 @@ C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAcce
 C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Entity.pdb
 C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.Core.pdb
 C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.csproj.CopyComplete
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\bin\Debug\netcoreapp3.0\IT.DataAccess.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.DataAccess\obj\Debug\netcoreapp3.0\IT.DataAccess.pdb

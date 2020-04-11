@@ -1,0 +1,15 @@
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.csprojAssemblyReference.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.AssemblyInfoInputs.cache
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.AssemblyInfo.cs
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Bussiness.deps.json
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Bussiness.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Bussiness.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Core.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.DataAccess.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Entity.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.DataAccess.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Entity.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\bin\Debug\netcoreapp3.0\IT.Core.pdb
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.csproj.CopyComplete
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.dll
+C:\Users\ismai\Desktop\GitHub\Core\DotNetCore\DotNetCore\DemoProject\IT.Bussiness\obj\Debug\netcoreapp3.0\IT.Bussiness.pdb
