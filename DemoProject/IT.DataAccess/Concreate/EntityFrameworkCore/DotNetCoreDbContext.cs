@@ -1,4 +1,5 @@
-﻿using IT.Entity.Concrete;
+﻿using IT.DataAccess.Concreate.EntityFrameworkCore.Mapping;
+using IT.Entity.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,13 @@ namespace IT.DataAccess.Concreate.EntityFrameworkCore
         }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration<Category>(new CategoryMap());
+            modelBuilder.ApplyConfiguration<Product>(new ProductMap());
+        }
     }
 }
