@@ -1,0 +1,86 @@
+﻿@model IT.MvcWebUI.Models.CategoryViewModel
+@{
+    ViewData["Title"] = "GetCategories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Starter Page</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Starter Page</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+<!-- Main content -->
+<section class="content ">
+    
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Projects</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped projects">
+                            <thead>
+                                <tr>
+                                    <th style="width: 1%">
+                                        #
+                                    </th>
+                                    <th style="width: 20%">
+                                        Name
+                                    </th>
+                                    <th style="width: 30%">
+                                        AddedBy
+                                    </th>
+                                    <th>
+                                        AddedDate
+                                    </th>
+                                    <th style="width: 8%" class="text-center">
+                                        Status
+                                    </th>
+                                    <th style="width: 20%">
+                                        Event
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <tr>
+                                        <td>@category.Id</td>
+                                        <td>@category.Name</td>
+                                        <td>@category.AddedBy</td>
+                                        <td>@category.AddedDate</td>
+                                        <td>@category.isActive</td>
+                                        <td>
+                                            <button class="btn btn-primary">Edit</button>
+                                            <button class="btn btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+       
+</section>
+<!-- /.content -->

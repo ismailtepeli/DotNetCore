@@ -1,0 +1,330 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.MvcWebUI\\IT.MvcWebUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\IT.Bussiness.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\IT.Bussiness.csproj",
+        "projectName": "IT.Bussiness",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\IT.Bussiness.csproj",
+        "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\IT.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\IT.DataAccess.csproj"
+              },
+              "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj": {
+                "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
+        "projectName": "IT.Core",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj",
+        "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\IT.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\IT.DataAccess.csproj",
+        "projectName": "IT.DataAccess",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\IT.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj": {
+                "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj",
+        "projectName": "IT.Entity",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\IT.Entity.csproj",
+        "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj": {
+                "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Core\\IT.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.MvcWebUI\\IT.MvcWebUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.MvcWebUI\\IT.MvcWebUI.csproj",
+        "projectName": "IT.MvcWebUI",
+        "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.MvcWebUI\\IT.MvcWebUI.csproj",
+        "packagesPath": "C:\\Users\\ismai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.MvcWebUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ismai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\IT.Bussiness.csproj": {
+                "projectPath": "C:\\Users\\ismai\\Desktop\\GitHub\\Core\\DotNetCore\\DotNetCore\\DemoProject\\IT.Bussiness\\IT.Bussiness.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

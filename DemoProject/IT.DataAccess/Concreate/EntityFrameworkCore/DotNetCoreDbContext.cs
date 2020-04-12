@@ -11,7 +11,7 @@ namespace IT.DataAccess.Concreate.EntityFrameworkCore
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-Q3FAR2U\SQLEXPRESS;Database=DotNetCoreDB;integrated security=true;Connection Timeout=1800;MultipleActiveResultSet=True");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-Q3FAR2U\SQLEXPRESS;Database=DotNetCoreDB;integrated security=true;Connection Timeout=1800;MultipleActiveResultSets=True;");
         }
 
         public DbSet<Category> Categories { get; set; }
