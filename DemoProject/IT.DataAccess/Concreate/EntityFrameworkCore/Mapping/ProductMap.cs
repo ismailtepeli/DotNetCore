@@ -11,7 +11,7 @@ namespace IT.DataAccess.Concreate.EntityFrameworkCore.Mapping
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.ToTable("Product", "dbo");
+            builder.ToTable("Products", "dbo");
 
             builder.HasKey(p => p.Id);
 
@@ -22,6 +22,7 @@ namespace IT.DataAccess.Concreate.EntityFrameworkCore.Mapping
             builder.Property(p => p.Height).HasColumnName("Height");
             builder.Property(p => p.Weight).HasColumnName("Weight");
             builder.Property(p => p.Width).HasColumnName("Width");
+            builder.Property(p => p.Name).HasColumnName("Name");
         }
     }
 }

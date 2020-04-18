@@ -29,6 +29,11 @@ namespace IT.MvcWebUI
         {
             services.AddScoped<ICategoryServices, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+
+            services.AddScoped<IProductServices, ProductManager>();
+            services.AddScoped<IProductDal, EfProductDall>();
+
+
             services.AddControllersWithViews();
         }
 

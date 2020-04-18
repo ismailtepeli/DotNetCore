@@ -20,6 +20,8 @@ namespace IT.Bussiness.Abstract
 
         Product GetById(int Id);
 
+        Product GetByName(string Name);
+
         List<Product> GetList();
 
         List<Product> GetListByCategoryId(int CategoryId);

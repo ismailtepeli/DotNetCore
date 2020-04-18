@@ -22,5 +22,7 @@ namespace IT.Entity.Concrete
         public string AddedBy { get; set; }
 
         public DateTime AddedDate { get; set; }
+
+        public string Name { get; set; }
     }
 }

@@ -36,6 +36,11 @@ namespace IT.Bussiness.Concreate.Managers
             return _IProductDal.Get(x => x.Id == Id);
         }
 
+        public Product GetByName(string Name)
+        {
+            return _IProductDal.Get(x => x.Name == Name);
+        }
+
         public List<Product> GetList()
         {
             return _IProductDal.GetAll();
