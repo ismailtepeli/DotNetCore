@@ -1,5 +1,6 @@
 ﻿using IT.Bussiness.Abstract;
 using IT.DataAccess.Abstract;
+using IT.Entity.ComplexTypes;
 using IT.Entity.Concrete;
 using System;
 using System.Collections.Generic;
@@ -49,6 +50,11 @@ namespace IT.Bussiness.Concreate.Managers
         public List<Product> GetListByCategoryId(int CategoryId)
         {
             return _IProductDal.GetAll(x => x.CategoryId == CategoryId);
+        }
+
+        public List<ProductCategoryComplexData> GetProductCategoryComplexDatas()
+        {
+            return _IProductDal.GetProductCategoryComplexDatas();
         }
 
         public Product Update(Product product)

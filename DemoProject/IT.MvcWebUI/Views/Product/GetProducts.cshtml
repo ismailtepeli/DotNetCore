@@ -70,15 +70,15 @@
                     @foreach (var product in Model.products)
                     {
                         <tr>
-                            <td>@product.Id</td>
-                            <td>@product.Name</td>
-                            <td>@product.Explanation</td>
+                            <td>@product.ProductId</td>
+                            <td>@product.ProductName</td>
+                            <td>@product.Explation</td>
                             <td>@product.AddedBy</td>
                             <td>@product.AddedDate</td>
-                            <td>@product.CategoryId</td>
+                            <td>@product.CategoryName</td>
                             <td>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#ModalEdit" onclick="EditCategory(@product.Id)">Edit</button>
-                                <button class="btn btn-danger" onclick="DeleteCategory(@product.Id)">Delete</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#ModalEdit" onclick="EditCategory(@product.ProductId)">Edit</button>
+                                <button class="btn btn-danger" onclick="DeleteCategory(@product.ProductId)">Delete</button>
                             </td>
                         </tr>
                     }
@@ -90,6 +90,58 @@
     <!-- /.card -->
 
 </section>
+
+<div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="Product" asp-action="Edit" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Product Edit</h5>
+                    <input type="hidden" id="ProductId" asp-for="@Model.product.Id" />
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="form-group-lg">
+                            <label class="dts_label">CategoryId:</label>
+                            <select class="form-control" asp-for="@Model.product.CategoryId" asp-items="@Model.Categories" id="CategoryId"></select>
+                        </div>
+                        <div class="form-group-lg ">
+                            <label class="dts_label">Name:</label>
+                            <input class="form-control" placeholder="Product Name" asp-for="@Model.product.Name" id="ProductName" />
+                        </div>
+
+                        <div class="form-group-lg">
+                            <label class="dts_label">Explanation:</label>
+                            <input class="form-control" placeholder="Explanation" asp-for="@Model.product.Explanation" id="Explanation" />
+                        </div>
+                        <div class="form-group-lg">
+                            <label class="dts_label">Weight:</label>
+                            <input class="form-control" placeholder="Weight" asp-for="@Model.product.Weight" id="Weight" />
+                        </div>
+                        <div class="form-group-lg">
+                            <label class="dts_label">Width:</label>
+                            <input class="form-control" placeholder="Width" asp-for="@Model.product.Width" id="Width" />
+                        </div>
+                        <div class="form-group-lg">
+                            <label class="dts_label">Height:</label>
+                            <input class="form-control" placeholder="Height" asp-for="@Model.product.Height" id="Height" />
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade" id="ModalAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -105,11 +157,17 @@
                 <div class="modal-body">
 
                     <div class="row">
+                        <div class="form-group-lg">
+                            <label class="dts_label">CategoryId:</label>
+                             <select class="form-control" asp-for="@Model.product.CategoryId" asp-items="@Model.Categories">
+                                 <option value="-1" selected disabled>--Seçiniz</option>
+                             </select>
+                        </div>
                         <div class="form-group-lg ">
                             <label class="dts_label">Name:</label>
                             <input class="form-control" placeholder="Product Name" asp-for="@Model.product.Name" />
                         </div>
-                    
+
                         <div class="form-group-lg">
                             <label class="dts_label">Explanation:</label>
                             <input class="form-control" placeholder="Explanation" asp-for="@Model.product.Explanation" />
@@ -126,10 +184,7 @@
                             <label class="dts_label">Height:</label>
                             <input class="form-control" placeholder="Height" asp-for="@Model.product.Height" />
                         </div>
-                        <div class="form-group-lg">
-                            <label class="dts_label">CategoryId:</label>
-                            <input class="form-control" placeholder="CategoryId" asp-for="@Model.product.CategoryId" />
-                        </div>
+
                     </div>
 
                 </div>
@@ -141,3 +196,32 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    function EditCategory(id) {
+        $.get('/Product/Edit', { id: id })
+            .done(function (result) {
+                
+                $("#ProductId").val(result.id);
+                $("#ProductName").val(result.name);
+                $("#Explanation").val(result.explanation);
+                $("#Weight").val(result.weight);
+                $("#Width").val(result.width);
+                $("#Height").val(result.height);
+                $("#CategoryId").val(result.categoryId);
+                $("#ModalEdit").modal("show");
+            })
+    }
+
+    function DeleteCategory(id) {
+        $.get('/Product/Delete', { id: id })
+            .done(function (result) {
+                if (result == 0) {
+                    alert("işlem gerçekleşmedi");
+                } else {
+                    alert("işlem gerçekleşti"); location.reload();
+                }
+
+            })
+    }
+</script>

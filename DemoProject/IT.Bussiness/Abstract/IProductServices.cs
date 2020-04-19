@@ -1,4 +1,5 @@
-﻿using IT.Entity.Concrete;
+﻿using IT.Entity.ComplexTypes;
+using IT.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -25,5 +26,7 @@ namespace IT.Bussiness.Abstract
         List<Product> GetList();
 
         List<Product> GetListByCategoryId(int CategoryId);
+
+        List<ProductCategoryComplexData> GetProductCategoryComplexDatas();
     }
 }
