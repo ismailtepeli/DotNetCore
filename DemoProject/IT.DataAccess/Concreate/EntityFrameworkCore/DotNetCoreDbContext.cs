@@ -18,10 +18,13 @@ namespace IT.DataAccess.Concreate.EntityFrameworkCore
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<ProductImages> ProductImages { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration<Category>(new CategoryMap());
             modelBuilder.ApplyConfiguration<Product>(new ProductMap());
+            modelBuilder.ApplyConfiguration<ProductImages>(new ProductImageMap());
         }
     }
 }

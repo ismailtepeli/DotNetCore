@@ -1,0 +1,71 @@
+﻿@model IT.MvcWebUI.Models.ProductViewModel
+@{
+    ViewData["Title"] = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form>
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Product Add</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="form-group-lg">
+                <label class="dts_label">CategoryId:</label>
+                <select class="form-control" asp-for="@Model.product.CategoryId" asp-items="@Model.Categories" disabled>
+                    <option value="-1" selected disabled>--Seçiniz</option>
+                </select>
+            </div>
+            <div class="form-group-lg ">
+                <label class="dts_label">Name:</label>
+                <input class="form-control" placeholder="Product Name" asp-for="@Model.product.Name"  disabled/>
+            </div>
+
+            <div class="form-group-lg">
+                <label class="dts_label">Explanation:</label>
+                <input class="form-control" placeholder="Explanation" asp-for="@Model.product.Explanation" disabled />
+            </div>
+            <div class="form-group-lg">
+                <label class="dts_label">Weight:</label>
+                <input class="form-control" placeholder="Weight" asp-for="@Model.product.Weight" disabled/>
+            </div>
+            <div class="form-group-lg">
+                <label class="dts_label">Width:</label>
+                <input class="form-control" placeholder="Width" asp-for="@Model.product.Width" disabled/>
+            </div>
+            <div class="form-group-lg">
+                <label class="dts_label">Height:</label>
+                <input class="form-control" placeholder="Height" asp-for="@Model.product.Height" disabled/>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Ürünün Resimleri
+            </div>
+            <div class="card-body">
+                <ul>
+                    @foreach (var item in Model.ProductImages)
+                    {
+                        <li>
+                           <img src='@item.FilePath'    width="350" height="250" /><br />
+                            <b>Resim Adı :<a href="@item.FilePath" download=""> @item.FileName</a> </b><hr />
+
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div> 
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+</form>

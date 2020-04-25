@@ -33,6 +33,8 @@ namespace IT.MvcWebUI
             services.AddScoped<IProductServices, ProductManager>();
             services.AddScoped<IProductDal, EfProductDall>();
 
+            services.AddScoped<IProductImageServices, ProductImageManager>();
+            services.AddScoped<IProductImageDal, EfProductImageDal>();
 
             services.AddControllersWithViews();
         }

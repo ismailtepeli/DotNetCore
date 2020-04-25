@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using IT.MvcWebUI.Models;
 using IT.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace IT.MvcWebUI.Controllers
 {
@@ -15,11 +17,14 @@ namespace IT.MvcWebUI.Controllers
 
         IProductServices _productServices;
         ICategoryServices _categoryServices;
-
-        public ProductController(IProductServices productServices, ICategoryServices categoryServices)
+        IProductImageServices _productImageServices;
+        IHostingEnvironment _env;
+        public ProductController(IProductServices productServices, ICategoryServices categoryServices,IProductImageServices productImageServices, IHostingEnvironment env)
         {
             _productServices = productServices;
             _categoryServices = categoryServices;
+            _productImageServices = productImageServices;
+            _env = env;
         }
 
         private List<SelectListItem> LoadCategories()
@@ -68,11 +73,38 @@ namespace IT.MvcWebUI.Controllers
                 };
                 try
                 {
-                    _productServices.Add(NewProduct);
+                  var AddedProduct= _productServices.Add(NewProduct);
+
+                    if (productViewModel.FormFiles!=null)
+                    {
+                        foreach (var image in productViewModel.FormFiles)
+                        {
+                             
+
+                            var uniqFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
+                            var FilePath = Path.DirectorySeparatorChar.ToString() + "ProductImages" + Path.DirectorySeparatorChar.ToString() + uniqFileName;
+                            var uploadsFolder = Path.Combine(_env.WebRootPath, "ProductImages");
+
+                            var filePathCopy = Path.Combine(uploadsFolder, uniqFileName);
+
+                            image.CopyTo(new FileStream(filePathCopy, FileMode.Create));
+
+                            var ProductImageForAdd = new ProductImages
+                            {
+                                AddedBy = "iso",
+                                AddedDate = DateTime.Now,
+                                FileName = uniqFileName,
+                                FilePath = FilePath,
+                                ProductId = AddedProduct.Id
+                            };
+                            _productImageServices.Add(ProductImageForAdd);
+                        }
+                    }
+
                     return RedirectToAction("GetProducts");
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     return RedirectToAction("GetProducts");
                 }
@@ -148,6 +180,24 @@ namespace IT.MvcWebUI.Controllers
             {
                 return Json(0);
             }
+        }
+
+
+        public IActionResult ProductDetail(int id)
+        {
+            if (id>0)
+            {
+                var productIsValid = _productServices.GetById(id);
+                var ProductImages = _productImageServices.GetListByProductId(id);
+
+                var productViewModel = new ProductViewModel
+                {
+                    product = productIsValid,
+                    ProductImages = ProductImages
+                };
+                return View(productViewModel);
+            }
+            return RedirectToAction("GetProducts");
         }
     }
 }

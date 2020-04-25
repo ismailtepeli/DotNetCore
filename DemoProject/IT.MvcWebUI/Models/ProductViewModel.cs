@@ -1,5 +1,6 @@
 ﻿using IT.Entity.ComplexTypes;
 using IT.Entity.Concrete;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,9 @@ namespace IT.MvcWebUI.Models
         public List<ProductCategoryComplexData> products { get; set; }
 
         public List<SelectListItem> Categories { get; set; } 
+
+        public List<IFormFile> FormFiles { get; set; }
+
+        public List<ProductImages> ProductImages { get; set; }
     }
 }

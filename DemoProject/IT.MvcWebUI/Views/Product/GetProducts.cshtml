@@ -52,7 +52,7 @@
                             Name
                         </th>
                         <th style="width: 20%">Explanation</th>
-                        <th style="width: 30%">
+                        <th style="width: 10%">
                             AddedBy
                         </th>
                         <th style="width: 30%">
@@ -79,6 +79,7 @@
                             <td>
                                 <button class="btn btn-primary" data-toggle="modal" data-target="#ModalEdit" onclick="EditCategory(@product.ProductId)">Edit</button>
                                 <button class="btn btn-danger" onclick="DeleteCategory(@product.ProductId)">Delete</button>
+                                <a href="/Product/ProductDetail/@product.ProductId" class="btn btn-primary">Detail</a>
                             </td>
                         </tr>
                     }
@@ -146,7 +147,7 @@
 <div class="modal fade" id="ModalAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form asp-controller="Product" asp-action="Add" method="post">
+            <form asp-controller="Product" asp-action="Add" method="post"  enctype="multipart/form-data">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Product Add</h5>
 
@@ -159,9 +160,9 @@
                     <div class="row">
                         <div class="form-group-lg">
                             <label class="dts_label">CategoryId:</label>
-                             <select class="form-control" asp-for="@Model.product.CategoryId" asp-items="@Model.Categories">
-                                 <option value="-1" selected disabled>--Seçiniz</option>
-                             </select>
+                            <select class="form-control" asp-for="@Model.product.CategoryId" asp-items="@Model.Categories">
+                                <option value="-1" selected disabled>--Seçiniz</option>
+                            </select>
                         </div>
                         <div class="form-group-lg ">
                             <label class="dts_label">Name:</label>
@@ -184,7 +185,10 @@
                             <label class="dts_label">Height:</label>
                             <input class="form-control" placeholder="Height" asp-for="@Model.product.Height" />
                         </div>
-
+                        <div class="form-group-lg">
+                            <label class="dts_label">Resim:</label>
+                            <input type="file" asp-item="@Model.FormFiles" name="formFiles" multiple/>
+                        </div>
                     </div>
 
                 </div>
