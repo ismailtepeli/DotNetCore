@@ -6,9 +6,12 @@ using IT.Bussiness.Abstract;
 using IT.Bussiness.Concreate.Managers;
 using IT.DataAccess.Abstract;
 using IT.DataAccess.Concreate.EntityFrameworkCore;
+using IT.MvcWebUI.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -35,6 +38,12 @@ namespace IT.MvcWebUI
 
             services.AddScoped<IProductImageServices, ProductImageManager>();
             services.AddScoped<IProductImageDal, EfProductImageDal>();
+
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["dbConnection"]));
+
+            services.AddIdentity<AppIdentityUser, AppIdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddControllersWithViews();
         }
