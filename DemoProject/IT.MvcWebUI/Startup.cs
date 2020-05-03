@@ -9,6 +9,7 @@ using IT.DataAccess.Concreate.EntityFrameworkCore;
 using IT.MvcWebUI.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -39,12 +40,47 @@ namespace IT.MvcWebUI
             services.AddScoped<IProductImageServices, ProductImageManager>();
             services.AddScoped<IProductImageDal, EfProductImageDal>();
 
+            #region migrations oluþtururken yazýlýyor
             services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["dbConnection"]));
 
             services.AddIdentity<AppIdentityUser, AppIdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
+            #endregion
+            #region Configure ve  ConfigureApplicationCookie Ayarlarý
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
 
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+                options.Lockout.AllowedForNewUsers = true;
+
+                options.User.RequireUniqueEmail = true;
+
+                options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedPhoneNumber = false;
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Security/Login";
+                options.LoginPath = "/Security/LogOut";
+                options.AccessDeniedPath = "/Security/AccessDeniedPath";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                options.Cookie = new CookieBuilder
+                {
+                    HttpOnly=true,
+                    Name="IT.Cookie",
+                    Path="/",
+                    SameSite=SameSiteMode.Lax,
+                    SecurePolicy=CookieSecurePolicy.SameAsRequest
+                };
+            });
+            #endregion
             services.AddControllersWithViews();
         }
 
